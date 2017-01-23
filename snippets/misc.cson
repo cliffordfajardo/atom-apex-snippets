@@ -1,0 +1,21 @@
+".source.apex":
+
+  "System debug with log level Error":
+    prefix: "debug"
+    body: "System.debug('*** ${1:object}: ' + ${1:object});$2"
+
+  "Assert Equals":
+		prefix: "assertNotEquals"
+		body: "System.assertEquals(${1:expected}, ${2:actual});$3"
+
+	"Assert Not Equals":
+		prefix: "assertEquals"
+		body: "System.assertNotEquals(${1:expected}, ${2:actual});$3"
+
+	"SOQL query":
+		prefix: "soql"
+		body: "[SELECT ${2:field} FROM  ${1:sObject}]$3"
+
+  "insert":
+		prefix: "insert"
+		body: "insert ${1:sObject};${2}"

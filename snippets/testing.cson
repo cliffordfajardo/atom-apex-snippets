@@ -1,0 +1,17 @@
+".source.apex":
+	"Test Method":
+		prefix: "testMethod"
+		body: """
+			@isTest
+			${1:public_or_private} static void ${2:MethodName}Test() {
+				${3}
+			}$4
+		"""
+	"Test Setup":
+		prefix: "testSetup"
+		body: """
+      @TestSetup
+      static void setup() {
+          ${1}
+      }
+		"""
