@@ -15,9 +15,15 @@
 
 ### Install
 
+For this package to function properly, please don't forget to install
+[mavensmate-atom](https://atom.io/packages/MavensMate-Atom) which will add
+the language grammars for these snippets.
+
 ```shell
 apm install atom-apex-snippets
 ```
+
+
 
 
 
@@ -361,7 +367,7 @@ insert ${1:sObject};${2}
 
 ### Related
 
-- [atom-apex-snippets package](https://atom.io/packages/atom-apex-snippets)
+- [atom-java-snippets package](https://atom.io/packages/atom-java-snippets)
 
 
 
