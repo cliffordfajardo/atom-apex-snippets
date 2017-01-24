@@ -8,3 +8,6 @@
 
 ## 0.3.0 - Third Release
 * 🐛 fix broken classes & flow-control snippets using one-line body syntax
+
+## 0.3.1 - Third Release
+* add badges, fix try/catch examples
