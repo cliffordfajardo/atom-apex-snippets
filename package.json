@@ -1,6 +1,6 @@
 {
   "name": "atom-apex-snippets",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A collection of Apex commands for optimizing modern Salesforce/force.com development productivity.",
   "private": true,
   "repository": "https://github.com/cliffordfajardo/atom-apex-snippets",
