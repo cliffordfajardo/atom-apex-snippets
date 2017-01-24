@@ -109,14 +109,14 @@ if(${1:condition}) {
 }$3
 ```
 
-##### `el⇥` else statement
+##### `else⇥` else statement
 ```java
 else {
   ${1}
 }$2
 ```
 
-##### `ife⇥` else statement
+##### `ifelse⇥` else statement
 ```java
 if(${1:condition}) {
   ${2}
@@ -125,7 +125,7 @@ if(${1:condition}) {
 }$4
 ```
 
-##### `eif⇥` else if statement
+##### `elseif⇥` else if statement
 ```java
 else if (${1:condition}) {
   ${2}
@@ -139,7 +139,7 @@ for (Integer ${1:i} = 0; ${1:i} < ${2:iterable}${3:.length}; ${1:i}++) {
 }${5}
 ```
 
-##### `fel⇥` iterator based for each loop
+##### `fore⇥` iterator based for each loop
 ```java
 for(${1:object_type} ${2:var_name}: ${3:collection_name}) {
   ${4:var_name}
@@ -153,7 +153,7 @@ while (${1:condition}) {
 }$3
 ```
 
-##### `tc⇥` try/catch
+##### `trycatch⇥` try/catch
 ```java
 try {
   ${1}
@@ -162,7 +162,7 @@ try {
 }$4
 ```
 
-##### `tf⇥` try/finally
+##### `tryfinally⇥` try/finally
 ```java
 try {
   ${1}
@@ -171,7 +171,7 @@ try {
 }$4
 ```
 
-##### `tcf⇥` try/catch/finally
+##### `trycatchfinally⇥` try/catch/finally
 ```java
 try {
   ${1}
@@ -193,8 +193,15 @@ try {
 
 ### Class Related Snippets
 
-##### `constructorPublic⇥` public class constructor
+##### `class⇥` class
 
+```java
+${1:pub_or_priv} class ${2:ClassName} {
+  ${3}
+}$4
+```
+
+##### `constructorPublic⇥` public class constructor
 ```java
 ${1:public} ${2:ClassName} (${3:Parameters}) {
   ${4}
@@ -228,7 +235,7 @@ ${1:private} ${2:ClassName} (${3:Parameters}) {
 ##### `methodStatic⇥` static method
 
 ```java
-${1:public_or_private} static ${2:ClassName} (${3:Parameters}) {
+${1:pub_or_private} static ${2:ClassName} (${3:Parameters}) {
   ${4}
 }$5
 ```
@@ -339,7 +346,7 @@ return -1;
 ##### `testMethod⇥` Test Method
 ```java
 @isTest
-${1:public_or_private} static void ${2:MethodName}Test() {
+${1:pub_or_private} static void ${2:MethodName}Test() {
   ${3}
 }$4
 ```
